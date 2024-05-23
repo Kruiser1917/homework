@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "your_project_name"
+version = "0.1.1"
+description = "Your project description"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+flake8 = "^3.9"
+mypy = "^1.10.0"
+pytest-cov = "^5.0.0"
+# другие dev-зависимости
+
+[tool.black]
+line-length = 129
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = 3.8
+warn_return_any = true
+warn_unused_configs = true
